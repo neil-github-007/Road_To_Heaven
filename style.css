@@ -1,0 +1,25 @@
+@font-face{
+    src: url(Fonts/Zombie_Holocaust.ttf);
+    font-family: zombie_holocaust;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+canvas{
+    border: 2px solid black;
+}
+h1{
+    font-size: 100px;
+    color: #fb3640;
+    text-align: center;
+    font-family: zombie_holocaust;
+}
+h2{
+    color: red;
+    font-size: 75px;
+}
+h3{
+    color:yellow;
+}
