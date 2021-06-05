@@ -19,16 +19,11 @@ class Player {
       });
     }
 
-    getChosenCount() {
-      var playerCountRef = database.ref('choosenCount');
-      playerCountRef.on("value",(data)=>{
-        chosenCount = data.val();
-      })
-    }
-
-    updateChosenCount(count) {
-      database.ref('/').update({
-        choosenCount:count
+    update(){
+      var playerIndex = "players/player" + this.index;
+      database.ref(playerIndex).set({
+        name:this.name,
+     
       });
     }
 
