@@ -6,6 +6,19 @@ class Form {
       
       this.title = createElement('h1');
       this.waitMessage = createElement('h3');
+
+      this.level1 = createElement("h2");
+      this.description = createElement("h3");
+      this.controls = createElement("h3");
+      this.play = createButton("play");
+
+      this.welcome = createElement("h2");
+
+      this.level1.hide();
+      this.description.hide();
+      this.controls.hide();
+      this.play.hide();
+      this.welcome.hide();
     }
   
     display(){
@@ -35,7 +48,7 @@ class Form {
         player.getCount();
         playerCount+=1;
         player.index = playerCount;
-        //player.update();
+        player.update();
         player.updateCount(playerCount);
 
         this.waitMessage.html("Waiting for other players to join");
@@ -45,4 +58,7 @@ class Form {
       });
       
     }
+
+    
+      
   }
